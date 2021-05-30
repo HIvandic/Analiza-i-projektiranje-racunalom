@@ -1,0 +1,95 @@
+1.
+Uz odredivanje optimalnog iznosa koraka:
+1.9999997462314094
+-2.999999619347114
+
+38 evaluacija funkcije
+2 racunanja gradijenta
+Vrijednost funkcije u dobivenoj tocki = 2.0929511726453027e-13
+
+Bez odredivanja optimalnog iznosa koraka:
+Divergencija, prekidam
+
+2.
+Postupak gradijentnog spusta za fciju 1:
+1.0000009251072643
+1.0000018538521747
+
+146024 evaluacija funkcije
+3947 racunanja gradijenta
+Vrijednost funkcije u dobivenoj tocki = 8.571460748489038e-13
+
+Newton-Raphsonov postupak za fciju 1:
+1.0000004463828938
+1.0000008927660362
+
+371151 evaluacija funkcije
+5085 racunanja gradijenta
+5085 racunanja Hesseove matrice
+Vrijednost funkcije u dobivenoj tocki = 1.992576878413804e-13
+
+Postupak gradijentnog spusta za fciju 2:
+3.999999648895193
+2.0000000503443944
+
+1000 evaluacija funkcije
+28 racunanja gradijenta
+Vrijednost funkcije u dobivenoj tocki = 1.334128177052157e-13
+
+Newton-Raphsonov postupak za fciju 2:
+4.000000800682098
+2.0000003490152736
+
+76 evaluacija funkcije
+2 racunanja gradijenta
+2 racunanja Hesseove matrice
+Vrijednost funkcije u dobivenoj tocki = 1.1283384674422437e-12
+
+3.
+Boxov postupak za fciju 1:
+0.010273672152197728
+0.010274108408848268
+
+187 evaluacija funkcije
+Vrijednost funkcije u dobivenoj tocki = 0.9898981654235083
+
+Boxov postupak za fciju 2:
+1.999999784784841
+2.0005534183014047
+
+168 evaluacija funkcije
+Vrijednost funkcije u dobivenoj tocki = 4.000002085947948
+
+4.
+Postupak transformacije u oblik bez ogranicenja za fciju 1:
+0.010190582275390714
+0.010190963745117188
+
+1955 evaluacija funkcije
+Vrijednost funkcije u dobivenoj tocki = 0.9898976738882191
+
+Postupak transformacije u oblik bez ogranicenja za fciju 2:
+1.9999996185302735
+2.0000007629394534
+
+2609 evaluacija funkcije
+Vrijednost funkcije u dobivenoj tocki = 4.0000015258813795
+
+5.
+Postupak transformacije u oblik bez ogranicenja za fciju 4:
+Pocetna tocka: 0, 0
+2.0000228881835938
+0.9999752044677734
+
+2034 evaluacija funkcije
+Vrijednost funkcije u dobivenoj tocki = 1.9999046337070467
+
+Postupak transformacije u oblik bez ogranicenja za fciju 4:
+Pocetna tocka: 5, 5
+Unutrasnja tocka: 1.0, 1.0
+2.0000228881835938
+0.9999752044677734
+
+2033 evaluacija funkcije
+Vrijednost funkcije u dobivenoj tocki = 1.9999046337070467
+
