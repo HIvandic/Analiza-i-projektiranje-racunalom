@@ -1,0 +1,38 @@
+1.zad
+Fcija 1:
+Prikaz s pomicnom tockom:
+	Rj pronadeno u 1 iteracija = 0.9994752676872647, 0.9989276312103912
+	Vrijednost fcije cilja = 3.2907295978161115e-07
+Binarni prikaz:
+	Rjesenje nije pronadeno u 15 iteracija
+	Najbolja jedinka = 010000010100011000010000010100010010
+	Sto odgovara: 0.995, 0.99
+	Vrijednost fcije cilja = 2.5062500000000308e-05
+Fcija 3:
+Prikaz s pomicnom tockom:
+	Rjesenje nije pronadeno u 15 iteracija
+	Najbolja jedinka = 0.002134911483258853, 1.0021861325345807, 2.0001919466328952, 2.998599197250016, 4.001322406863483
+	Vrijednost fcije cilja = 1.3084874266933446e-05
+Binarni prikaz:
+	Rjesenje nije pronadeno u 15 iteracija
+	Najbolja jedinka = 001111111001000101010000001101110111010000100000100111010001000111011001010001011101110010
+	Sto odgovara: -0.338, 0.677, 1.592, 3.486, 4.579
+	Vrijednost fcije cilja = 0.9564739999999998
+Fcija 6:
+Prikaz s pomicnom tockom:
+	Rj pronadeno u 13 iteracija = -0.0009651171199416017, 0.0002157321158361373
+	Vrijednost fcije cilja = 9.789690717521005e-07
+Binarni prikaz:
+	Rjesenje nije pronadeno u 15 iteracija
+	Najbolja jedinka = 010000000001000010001111111111100010
+	Sto odgovara: 0.051, -0.023
+	Vrijednost fcije cilja = 0.0031298461412506695
+Fcija 7:
+Prikaz s pomicnom tockom:
+	Rj pronadeno u 9 iteracija = 8.363762502779704e-13, -1.957961956821615e-13
+	Vrijednost fcije cilja = 9.609454318648083e-07
+Binarni prikaz:
+	Rjesenje nije pronadeno u 15 iteracija
+	Najbolja jedinka = 001111111111111101001111111111111101
+	Sto odgovara: -0.002, -0.002
+	Vrijednost fcije cilja = 0.05632414115601404
