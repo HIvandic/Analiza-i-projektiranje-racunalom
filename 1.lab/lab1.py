@@ -538,219 +538,220 @@ class Matrica:
         return det
 
 
-ime = '1.txt'
-ime2A = '2A.txt'
-ime2b = '2b.txt'
-ime3 = '3.txt'
-ime4A = '4A.txt'
-ime4b = '4b.txt'
-ime5A = '5A.txt'
-ime5b = '5b.txt'
-ime6A = '6A.txt'
-ime6b = '6b.txt'
-ime7 = '7.txt'
-ime8 = '8.txt'
-ime9 = '9.txt'
-ime10 = '10.txt'
+if __name__ == '__main__':
+    ime = '1.txt'
+    ime2A = '2A.txt'
+    ime2b = '2b.txt'
+    ime3 = '3.txt'
+    ime4A = '4A.txt'
+    ime4b = '4b.txt'
+    ime5A = '5A.txt'
+    ime5b = '5b.txt'
+    ime6A = '6A.txt'
+    ime6b = '6b.txt'
+    ime7 = '7.txt'
+    ime8 = '8.txt'
+    ime9 = '9.txt'
+    ime10 = '10.txt'
 
-# prvi zad
-d.write("1. zadatak:\n")
-print("1. zadatak")
-A = Matrica()
-A.citaj(ime)
-B = A.pridruzivanje()  # B = A
-B = B.mnozenje_skalarom(1 / 25897)
-B = B.mnozenje_skalarom(25897)
-d.write(str(A == B) + "\n\n")
-print(str(A == B) + "\n")
+    # prvi zad
+    d.write("1. zadatak:\n")
+    print("1. zadatak")
+    A = Matrica()
+    A.citaj(ime)
+    B = A.pridruzivanje()  # B = A
+    B = B.mnozenje_skalarom(1 / 25897)
+    B = B.mnozenje_skalarom(25897)
+    d.write(str(A == B) + "\n\n")
+    print(str(A == B) + "\n")
 
-# drugi zad
-d.write("2. zadatak:\n")
-print("2. zadatak")
-d.write("Rjesenje nakon LU dekompozicije:\n")
-print("Rjesenje nakon LU dekompozicije:")
-A.citaj(ime2A)
-C = Matrica()
-C.citaj(ime2b)
-x1 = A.rijesiLU(C)
-if x1 is not None:
-    x1.dopisi()
-    x1.ispis_ekran()
-print()
-d.write("\n")
-A.citaj(ime2A)  # ponovno citanje jer je koristen isti memorijski prostor
-C.citaj(ime2b)
+    # drugi zad
+    d.write("2. zadatak:\n")
+    print("2. zadatak")
+    d.write("Rjesenje nakon LU dekompozicije:\n")
+    print("Rjesenje nakon LU dekompozicije:")
+    A.citaj(ime2A)
+    C = Matrica()
+    C.citaj(ime2b)
+    x1 = A.rijesiLU(C)
+    if x1 is not None:
+        x1.dopisi()
+        x1.ispis_ekran()
+    print()
+    d.write("\n")
+    A.citaj(ime2A)  # ponovno citanje jer je koristen isti memorijski prostor
+    C.citaj(ime2b)
 
-d.write("Rjesenje nakon LUP dekompozicije:\n")
-print("Rjesenje nakon LUP dekompozicije:")
-x2 = A.rijesiLUP(C)
-if x2 is not None:
-    x2.dopisi()
-    x2.ispis_ekran()
-print()
-d.write("\n")
+    d.write("Rjesenje nakon LUP dekompozicije:\n")
+    print("Rjesenje nakon LUP dekompozicije:")
+    x2 = A.rijesiLUP(C)
+    if x2 is not None:
+        x2.dopisi()
+        x2.ispis_ekran()
+    print()
+    d.write("\n")
 
-# treci zad
-d.write("3. zadatak:\n")
-print("3. zadatak")
-A.citaj(ime3)
-d.write("LU dekompozicija:\n")
-print("LU dekompozicija:")
-x1 = A.dekompozicijaLU()
-if x1 is not None:
-    x1.dopisi()
-    x1.ispis_ekran()
-print()
-d.write("\n")
-A.citaj(ime3)
-d.write("LUP dekompozicija:\n")
-print("LUP dekompozicija:")
-x2, z = A.dekompozicijaLUP()
-if A is not None:
-    A.dopisi()
-    A.ispis_ekran()
-print()
-d.write("\n")
+    # treci zad
+    d.write("3. zadatak:\n")
+    print("3. zadatak")
+    A.citaj(ime3)
+    d.write("LU dekompozicija:\n")
+    print("LU dekompozicija:")
+    x1 = A.dekompozicijaLU()
+    if x1 is not None:
+        x1.dopisi()
+        x1.ispis_ekran()
+    print()
+    d.write("\n")
+    A.citaj(ime3)
+    d.write("LUP dekompozicija:\n")
+    print("LUP dekompozicija:")
+    x2, z = A.dekompozicijaLUP()
+    if A is not None:
+        A.dopisi()
+        A.ispis_ekran()
+    print()
+    d.write("\n")
 
-# provjera rjesivosti
-A.citaj(ime3)
-C = Matrica()
-C.citaj(ime2b)
-d.write("Rjesenje nakon LU dekompozicije:\n")
-print("Rjesenje nakon LU dekompozicije:")
-x1 = A.rijesiLU(C)
-if x1 is not None:
-    x1.dopisi()
-    x1.ispis_ekran()
-print()
-d.write("\n")
-A.citaj(ime3)  # ponovno citanje jer je koristen isti memorijski prostor
-C.citaj(ime2b)
+    # provjera rjesivosti
+    A.citaj(ime3)
+    C = Matrica()
+    C.citaj(ime2b)
+    d.write("Rjesenje nakon LU dekompozicije:\n")
+    print("Rjesenje nakon LU dekompozicije:")
+    x1 = A.rijesiLU(C)
+    if x1 is not None:
+        x1.dopisi()
+        x1.ispis_ekran()
+    print()
+    d.write("\n")
+    A.citaj(ime3)  # ponovno citanje jer je koristen isti memorijski prostor
+    C.citaj(ime2b)
 
-d.write("Rjesenje nakon LUP dekompozicije:\n")
-print("Rjesenje nakon LUP dekompozicije:")
-x2 = A.rijesiLUP(C)
-if x2 is not None:
-    x2.dopisi()
-    x2.ispis_ekran()
-print()
-d.write("\n")
+    d.write("Rjesenje nakon LUP dekompozicije:\n")
+    print("Rjesenje nakon LUP dekompozicije:")
+    x2 = A.rijesiLUP(C)
+    if x2 is not None:
+        x2.dopisi()
+        x2.ispis_ekran()
+    print()
+    d.write("\n")
 
-# cetvrti zad
-d.write("4. zadatak:\n")
-print("4. zadatak")
-d.write("Rjesenje nakon LU dekompozicije:\n")
-print("Rjesenje nakon LU dekompozicije:")
-A.citaj(ime4A)
-C = Matrica()
-C.citaj(ime4b)
-x1 = A.rijesiLU(C)
-if x1 is not None:
-    x1.dopisi()
-    x1.ispis_ekran()
-print()
-d.write("\n")
-A.citaj(ime4A)  # ponovno citanje jer je koristen isti memorijski prostor
-C.citaj(ime4b)
+    # cetvrti zad
+    d.write("4. zadatak:\n")
+    print("4. zadatak")
+    d.write("Rjesenje nakon LU dekompozicije:\n")
+    print("Rjesenje nakon LU dekompozicije:")
+    A.citaj(ime4A)
+    C = Matrica()
+    C.citaj(ime4b)
+    x1 = A.rijesiLU(C)
+    if x1 is not None:
+        x1.dopisi()
+        x1.ispis_ekran()
+    print()
+    d.write("\n")
+    A.citaj(ime4A)  # ponovno citanje jer je koristen isti memorijski prostor
+    C.citaj(ime4b)
 
-d.write("Rjesenje nakon LUP dekompozicije:\n")
-print("Rjesenje nakon LUP dekompozicije:")
-x2 = A.rijesiLUP(C)
-if x2 is not None:
-    x2.dopisi()
-    x2.ispis_ekran()
-print()
-d.write("\n")
+    d.write("Rjesenje nakon LUP dekompozicije:\n")
+    print("Rjesenje nakon LUP dekompozicije:")
+    x2 = A.rijesiLUP(C)
+    if x2 is not None:
+        x2.dopisi()
+        x2.ispis_ekran()
+    print()
+    d.write("\n")
 
-# peti zad
-d.write("5. zadatak:\n")
-print("5. zadatak")
-d.write("Rjesenje nakon LU dekompozicije:\n")
-print("Rjesenje nakon LU dekompozicije:")
-A.citaj(ime5A)
-C = Matrica()
-C.citaj(ime5b)
-x1 = A.rijesiLU(C)
-if x1 is not None:
-    x1.dopisi()
-    x1.ispis_ekran()
-print()
-d.write("\n")
-A.citaj(ime5A)  # ponovno citanje jer je koristen isti memorijski prostor
-C.citaj(ime5b)
+    # peti zad
+    d.write("5. zadatak:\n")
+    print("5. zadatak")
+    d.write("Rjesenje nakon LU dekompozicije:\n")
+    print("Rjesenje nakon LU dekompozicije:")
+    A.citaj(ime5A)
+    C = Matrica()
+    C.citaj(ime5b)
+    x1 = A.rijesiLU(C)
+    if x1 is not None:
+        x1.dopisi()
+        x1.ispis_ekran()
+    print()
+    d.write("\n")
+    A.citaj(ime5A)  # ponovno citanje jer je koristen isti memorijski prostor
+    C.citaj(ime5b)
 
-d.write("Rjesenje nakon LUP dekompozicije:\n")
-print("Rjesenje nakon LUP dekompozicije:")
-x2 = A.rijesiLUP(C)
-if x2 is not None:
-    x2.dopisi()
-    x2.ispis_ekran()
-print()
-d.write("\n")
+    d.write("Rjesenje nakon LUP dekompozicije:\n")
+    print("Rjesenje nakon LUP dekompozicije:")
+    x2 = A.rijesiLUP(C)
+    if x2 is not None:
+        x2.dopisi()
+        x2.ispis_ekran()
+    print()
+    d.write("\n")
 
-# sesti zad
-konst = 0.000001
-d.write("6. zadatak:\n")
-print("6. zadatak")
-d.write("Rjesenje nakon LU dekompozicije:\n")
-print("Rjesenje nakon LU dekompozicije:")
-A.citaj(ime6A)
-C = Matrica()
-C.citaj(ime6b)
-x1 = A.rijesiLU(C)
-if x1 is not None:
-    x1.dopisi()
-    x1.ispis_ekran()
-print()
-d.write("\n")
-A.citaj(ime6A)  # ponovno citanje jer je koristen isti memorijski prostor
-C.citaj(ime6b)
+    # sesti zad
+    konst = 0.000001
+    d.write("6. zadatak:\n")
+    print("6. zadatak")
+    d.write("Rjesenje nakon LU dekompozicije:\n")
+    print("Rjesenje nakon LU dekompozicije:")
+    A.citaj(ime6A)
+    C = Matrica()
+    C.citaj(ime6b)
+    x1 = A.rijesiLU(C)
+    if x1 is not None:
+        x1.dopisi()
+        x1.ispis_ekran()
+    print()
+    d.write("\n")
+    A.citaj(ime6A)  # ponovno citanje jer je koristen isti memorijski prostor
+    C.citaj(ime6b)
 
-d.write("Rjesenje nakon LUP dekompozicije:\n")
-print("Rjesenje nakon LUP dekompozicije:")
-x2 = A.rijesiLUP(C)
-if x2 is not None:
-    x2.dopisi()
-    x2.ispis_ekran()
-print()
-d.write("\n")
-konst = 0.00000000001
+    d.write("Rjesenje nakon LUP dekompozicije:\n")
+    print("Rjesenje nakon LUP dekompozicije:")
+    x2 = A.rijesiLUP(C)
+    if x2 is not None:
+        x2.dopisi()
+        x2.ispis_ekran()
+    print()
+    d.write("\n")
+    konst = 0.00000000001
 
-# sedmi zad
-d.write("7. zadatak:\n")
-print("7. zadatak")
-A.citaj(ime7)
-inv = A.inverz()
-if inv is not None:
-    inv.dopisi()
-    inv.ispis_ekran()
-print()
-d.write("\n")
+    # sedmi zad
+    d.write("7. zadatak:\n")
+    print("7. zadatak")
+    A.citaj(ime7)
+    inv = A.inverz()
+    if inv is not None:
+        inv.dopisi()
+        inv.ispis_ekran()
+    print()
+    d.write("\n")
 
-# osmi zad
-d.write("8. zadatak:\n")
-print("8. zadatak")
-A.citaj(ime8)
-inv = A.inverz()
-if inv is not None:
-    inv.dopisi()
-    inv.ispis_ekran()
-print()
-d.write("\n")
+    # osmi zad
+    d.write("8. zadatak:\n")
+    print("8. zadatak")
+    A.citaj(ime8)
+    inv = A.inverz()
+    if inv is not None:
+        inv.dopisi()
+        inv.ispis_ekran()
+    print()
+    d.write("\n")
 
-# deveti zad
-d.write("9. zadatak:\n")
-print("9. zadatak")
-A.citaj(ime9)
-det = A.determinanta()
-d.write(str(det) + "\n")
-print(str(det) + "\n")
-d.write("\n")
+    # deveti zad
+    d.write("9. zadatak:\n")
+    print("9. zadatak")
+    A.citaj(ime9)
+    det = A.determinanta()
+    d.write(str(det) + "\n")
+    print(str(det) + "\n")
+    d.write("\n")
 
-# deseti zad
-d.write("10. zadatak:\n")
-print("10. zadatak")
-A.citaj(ime10)
-det = A.determinanta()
-d.write(str(det) + "\n")
-print(str(det))
+    # deseti zad
+    d.write("10. zadatak:\n")
+    print("10. zadatak")
+    A.citaj(ime10)
+    det = A.determinanta()
+    d.write(str(det) + "\n")
+    print(str(det))
